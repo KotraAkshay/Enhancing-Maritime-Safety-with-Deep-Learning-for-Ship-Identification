@@ -1,4 +1,3 @@
-# Enhancing-Ship-Identification-Using-CNN
 # Significance of the problem
 The objective includes the detection of the ship in the ocean by using the satellite image includes the domain like marine security as primary other than traffic
 monitoring, illegal cargo movement, oil discharge control and sea pollution monitoring.
@@ -15,8 +14,10 @@ The dataset parsed into the model to train is a JSON formatted text file with th
 • label: Two classes valued as 1 for ‘ship’ and 0 for ‘not ship’.
 • scene id: The unique identifier of the PlanetScope visual scene the image chip was extracted from.
 • longitude_latitude: The longitude and latitude coordinates of the image centre point, with values separated by a single underscore.
-(C:\Users\Sandhya\Downloads\dataset sample.png)
-(C:\Users\Sandhya\Downloads\sample image channel.png)
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/dataset%20sample.png)
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/sample%20image%20channel.png)
 
 # Model Selection
 Since our problem falls under the domain of computer vision, the best choice we could have is to build a model using a Convolution Neural Network.
@@ -26,11 +27,11 @@ We have chosen to build a ConvNet from scratch instead of picking a pre-trained 
 So why ConvNets but not deep learning model?
 To understand this fact, let's have an example where we need to process an RGB image with the dimension 1000 X 1000.
 
-(C:\Users\Sandhya\Downloads\image dimesion sample.png)
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/image%20dimesion%20sample.png)
 
 when we tend to create a deep neural network, the input vector to the neural network will have 1000*1000*3 = 3 million inputs values and if we have not more but just 1000 nodes in the first hidden layer, the numbers of parameters to learn in the first transition itself will be around 3 million * 1000 = 3 Billion and optimizing these much numbers of parameters is not feasible at all and this is just for a small image in the only first transition, hence we need to have a practical model to deal with this problem. This is where CNN comes to solve this issue.
 
-(C:\Users\Sandhya\Downloads\DNN.png)
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/DNN.png)
 
 The above diagram represents a deep neural network with taking input as all 3 million pixels values of the image, which further classifiy it into one of the two predefined output class.
 
@@ -41,7 +42,7 @@ Since the feature selection is done by CNN itself automatically, the time we nee
 
 # Model Architecture 
 
-(C:\Users\Sandhya\Downloads\CNN Model.png)
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/CNN%20Model.png)
 
 # Experimental Use Cases
 Changes made in the model architecture:
@@ -52,16 +53,17 @@ Changes made in the model architecture:
 # Evaluation and Outcomes 
 Input image sample
 
-(C:\Users\Sandhya\Downloads\sample input.png)
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/sample%20input.png)
 
 Output image sample
 
-(C:\Users\Sandhya\Downloads\sample output.png)
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/sample%20output.png)
 
 Model training Accuracy graph
 
-(C:\Users\Sandhya\Downloads\training accracy graph.png)
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/training%20accracy%20graph.png)
 
 Model training loss graph
 
-(C:\Users\Sandhya\Downloads\loss graph.png)
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/loss%20graph.png)
+
